@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Hub</title>
+
+    <style>
+        /* ---------- Base Style ---------- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 40px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* ---------- Game Cards ---------- */
+        .game-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 260px;
+            padding: 25px;
+            border-radius: 18px;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+
+            transition: 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.05);
+            background: rgba(255, 255, 255, 0.32);
+        }
+
+        /* ---------- Mobile Responsive ---------- */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎮 Choose Your Game</h1>
+
+        <div class="game-buttons">
+            <a class="card" href="Project_1_Tic_Tac_Toe/index1.html">Tic Tac Toe</a>
+            <a class="card" href="Project_2_Rock_Paper_Scissors/index2.html">Rock Paper Scissors</a>
+        </div>
+    </div>
+
+</body>
+</html>
