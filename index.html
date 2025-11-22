@@ -6,7 +6,6 @@
     <title>Game Hub</title>
 
     <style>
-        /* ---------- Base Style ---------- */
         body {
             margin: 0;
             padding: 0;
@@ -14,6 +13,7 @@
             background: linear-gradient(135deg, #6a11cb, #2575fc);
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -32,7 +32,6 @@
             letter-spacing: 2px;
         }
 
-        /* ---------- Game Cards ---------- */
         .game-buttons {
             display: flex;
             justify-content: center;
@@ -48,11 +47,9 @@
             color: white;
             font-size: 22px;
             font-weight: bold;
-
             background: rgba(255, 255, 255, 0.18);
             border: 1px solid rgba(255, 255, 255, 0.25);
             backdrop-filter: blur(10px);
-
             transition: 0.3s ease-in-out;
         }
 
@@ -61,15 +58,22 @@
             background: rgba(255, 255, 255, 0.32);
         }
 
-        /* ---------- Mobile Responsive ---------- */
         @media (max-width: 600px) {
             h1 {
                 font-size: 32px;
             }
-
             .card {
                 width: 80%;
             }
+        }
+
+        /* Copyright text */
+        .copyright {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -82,6 +86,10 @@
             <a class="card" href="Project_1_Tic_Tac_Toe/index1.html">Tic Tac Toe</a>
             <a class="card" href="Project_2_Rock_Paper_Scissors/index2.html">Rock Paper Scissors</a>
         </div>
+    </div>
+
+    <div class="copyright">
+        &copy; 2025 Nahid Hasan. All rights reserved.
     </div>
 
 </body>
